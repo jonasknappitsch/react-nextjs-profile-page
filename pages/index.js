@@ -1,8 +1,16 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 import Section from "../components/Section";
-import { Mail, Storefront, Language, Build, BuildOutlined, Settings, SettingsOutlined } from "@material-ui/icons/";
-const TITLE = "WOLKENSTEIN";
+import {
+  Mail,
+  Storefront,
+  Language,
+  Build,
+  BuildOutlined,
+  Settings,
+  SettingsOutlined,
+} from "@material-ui/icons/";
+const TITLE = "JONAS KNAPPITSCH";
 const SUBTITLE = "the new era of online presence";
 
 export default function Home() {
@@ -26,13 +34,13 @@ export default function Home() {
               role="button"
               className="btn btn-primary nonoutlinebutton pagetitlebtn mt-2 mx-2"
             >
-              What we do
+              What I Do
             </a>
           </Link>
         </div>
       </div>
 
-      <Section id="whoweare" textAlign="center" height="50" title="Who we are">
+      <Section id="whoweare" textAlign="center" height="50" title="Who i am">
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -49,17 +57,12 @@ export default function Home() {
           href="#whatwedo"
           className="btn btn-outline-primary mt-5"
         >
-          Our services
+          My services
         </a>
       </Section>
 
       <div className="gradient waves py-4">
-        <Section
-          id="whatwedo"
-          textAlign="center"
-          height="50"
-          title="What we do"
-        >
+        <Section id="whatwedo" textAlign="center" height="50" title="What i do">
           <div className="container">
             <p>
               Using cutting-edge technology and following the most contemporary
@@ -71,7 +74,7 @@ export default function Home() {
             <div className="row pt-4">
               <div className="col-sm grow">
                 <Language fontSize="large" className="icon my-4" />
-                <h4>Website</h4>
+                <h4>Project Management</h4>
                 <p>
                   A website is the foundation for a successful modern business.
                   You tell us your values and we conceptualize a website that
@@ -80,24 +83,20 @@ export default function Home() {
               </div>
               <div className="col-sm grow">
                 <Storefront fontSize="large" className="icon my-4" />
-                <h4>Onlineshop</h4>
-                <p>While you take care of your products, we arrange the sales. Having a perfectly designed onlineshop set up, we're ready to attract customers.</p>
-              </div>
-              <div className="col-sm grow">
-                <SettingsOutlined fontSize="large" className="icon my-4" />
-                <h4>Optimization</h4>
+                <h4>Digital Consulting</h4>
                 <p>
-                  Having your shop created, we optimize it so you attract the
-                  customers you want to target in order to outperform your competition.
+                  While you take care of your products, we arrange the sales.
+                  Having a perfectly designed onlineshop set up, we're ready to
+                  attract customers.
                 </p>
               </div>
             </div>
           </div>
         </Section>
       </div>
-      <Section id="contact" textAlign="center" height="50" title="Contact us">
+      <Section id="contact" textAlign="center" height="50" title="Contact me">
         <p>
-          Let's approach your project together! We'd be glad to get in touch
+          Let's approach your project together! I'd be glad to get in touch
           with you.
         </p>
 
@@ -117,8 +116,6 @@ export default function Home() {
         .waves {
           background-image: url("/img/gradient-waves_2.png");
 
-          
-          
           background-repeat: no-repeat;
           background-size: 100% 100%;
         }

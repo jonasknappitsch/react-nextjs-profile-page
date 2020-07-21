@@ -28,7 +28,7 @@ export default function FullScreenNav() {
       <nav className="navbar navbar-expand navbar-light bg-light fixed-top p-3">
         <div className="container">
           <a className="navbar-brand" href="/">
-            Wolkenstein
+            Jonas Knappitsch
           </a>
           <br></br>
           <div className="collapse navbar-collapse">
