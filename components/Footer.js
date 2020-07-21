@@ -10,47 +10,22 @@ export default function Footer() {
   return (
     <div>
       <div className="footersection">
-      <div className="container">
-      <div className="footercontent">
-        
-        <h1 className="footertitle">Newsletter</h1>
-          <p>Sign up to receive our latest updates and unique offers</p>
-          <form>
-            <input
-              type="email"
-              className="form-control"
-              id="emailinput"
-              placeholder="Enter email"
-            ></input>
-            <button
-              id="submitbtn"
-              type="submit"
-              className="btn btn-secondary btn-gradient btn-glow-hover"
-            >
-              Submit
-            </button>
-          </form>
-          </div>
-        </div>
+      
         <div className="gradient" style={{ height: "0.75vh" }}></div>
         <div className="container">
         <div className="row py-4">
           <div className="col-sm-4 pb-2">
-            <Link href="www.instagram.com">
-              <Instagram />
-            </Link>
-            <Link href="www.facebook.com">
-              <Facebook />
+          <Link href="/legal">
+              <InfoOutlined />
             </Link>
           </div>
           <div className="col-sm-4 pb-2">
-            <Link href="/">
-              <HomeRounded />
-            </Link>
+            <p>&copy; Jonas Knappitsch 2020 </p>
           </div>
           <div className="col-sm-4">
-            <Link href="/legal">
-              <InfoOutlined />
+            
+            <Link href="/">
+              <HomeRounded />
             </Link>
           </div>
         </div>
@@ -59,7 +34,7 @@ export default function Footer() {
       <style jsx>{`
         .footersection {
           text-align: center;
-          min-height: 50vh;
+          min-height: 10vh;
           background-color: black;
           color: lightgrey;
         }

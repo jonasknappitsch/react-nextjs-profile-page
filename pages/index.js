@@ -9,9 +9,14 @@ import {
   BuildOutlined,
   Settings,
   SettingsOutlined,
+  InfoOutlined,
+  Facebook,
+  Instagram,
+  HomeRounded,
+  LinkedIn,
 } from "@material-ui/icons/";
 const TITLE = "JONAS KNAPPITSCH";
-const SUBTITLE = "the new era of online presence";
+const SUBTITLE = "technology | management | innovation";
 
 export default function Home() {
   return (
@@ -57,67 +62,136 @@ export default function Home() {
           href="#whatwedo"
           className="btn btn-outline-primary mt-5"
         >
-          My services
+          My work
         </a>
       </Section>
+      <hr></hr>
+      <Section id="whatwedo" textAlign="center" height="50" title="What i do">
+        <div className="container">
+          <p>
+            Using cutting-edge technology and following the most contemporary
+            design principles, we conceptualize state-of-the-art web appearences
+            for every individual - whether small-scale business or highly
+            established company.
+          </p>
 
-      <div className="gradient waves py-4">
-        <Section id="whatwedo" textAlign="center" height="50" title="What i do">
-          <div className="container">
-            <p>
-              Using cutting-edge technology and following the most contemporary
-              design principles, we conceptualize state-of-the-art web
-              appearences for every individual - whether small-scale business or
-              highly established company.
-            </p>
-
-            <div className="row pt-4">
-              <div className="col-sm grow">
-                <Language fontSize="large" className="icon my-4" />
-                <h4>Project Management</h4>
-                <p>
-                  A website is the foundation for a successful modern business.
-                  You tell us your values and we conceptualize a website that
-                  reflects them.
+          <div className="row py-5 ">
+            <div className="col-sm">
+              <h4>Currently</h4>
+                <p className="grow">
+                  Spokesman for Southern Europe<br></br>@
+                  <a href="https://www.auslandsdienst.at/en">
+                    Austrian Service Abroad
+                  </a>
                 </p>
+                <p className="grow">
+                  International Relations <br></br>@
+                  <a href="https://www.auslandsdienst.at/en">
+                    Austrian Service Abroad
+                  </a>
+                </p>
+                <p className="grow">
+                  Graduation with distinction <br></br>@
+                  <a href="https://www.htl-kaindorf.at/abteilungen/informatik">
+                    HTL Kaindorf
+                  </a>
+                </p>
+                <p className="grow">
+                  Diploma Thesis about PWA<br></br>@
+                  <a href="https://www.htl-kaindorf.at/abteilungen/informatik">
+                    HTL Kaindorf
+                  </a>
+                </p>
+            </div>
+
+            <div className="col-sm">
+              <h4>Previously</h4>
+                <p className="grow">
+                  Project Manager <br></br>@
+                  <a href="https://www.niceshops.com/en">Niceshops GmbH</a>
+                </p>
+                <p className="grow">
+                  Machine Learning Engineer <br></br>@
+                  <a href="https://www.knapp.com/en/">KNAPP AG</a>
+                </p>
+                <p className="grow">
+                  Software Engineer <br></br>@
+                  <a href="https://www.ksengineers.at/en">KSEngineers GmbH</a>
+                </p>
+                <p className="grow">
+                  IT-Administrator <br></br>@
+                  <a href="https://www.ksengineers.at/en">KSEngineers GmbH</a>
+                </p>
+            </div>
+
+            <div className="col-sm">
+              <h4>Interests</h4>
+              <p className="grow">Programming<br></br>
+              #<a href="#">Java </a>
+              #<a href="#">Python </a>
+              </p>
+              <p className="grow">Progressive Web Apps<br></br>
+              #<a href="#">React.js </a>
+              #<a href="#">Next.js </a>
+              #<a href="#">Node.js </a>
+              </p>
+              <p className="grow">Database Modelling<br></br>
+              #<a href="#">SQL </a>
+              #<a href="#">NoSQL </a>
+              #<a href="#">Redis </a>
+              #<a href="#">MongoDB </a>
+              </p>
+              <p className="grow">Project Management<br></br>
+              #<a href="#">Agile </a>
+              #<a href="#">SCRUM </a>
+              </p>
+            </div>
+          </div>
+          <a
+          role="button"
+          href="#contact"
+          className="btn btn-outline-primary"
+        >
+          Contact
+        </a>
+        </div>
+      </Section>
+      <hr></hr>
+      <Section id="contact" textAlign="center" height="50" title="Contact me">
+        <p>
+          Let's approach your project together! I'd be glad to get in touch with
+          you.
+        </p>
+        <div className="container" style={{ maxWidth: "500px" }}>
+          <div className="row pt-4 px-4">
+            <div className="col-sm">
+              <div className="grow">
+                <a href="#">
+                  <Mail fontSize="large" />
+                  <p>hello@wolkenstein.com</p>
+                </a>
               </div>
-              <div className="col-sm grow">
-                <Storefront fontSize="large" className="icon my-4" />
-                <h4>Digital Consulting</h4>
-                <p>
-                  While you take care of your products, we arrange the sales.
-                  Having a perfectly designed onlineshop set up, we're ready to
-                  attract customers.
-                </p>
+            </div>
+            <div className="col-sm">
+              <div className="grow">
+                <a href="#" className="grow">
+                  <LinkedIn fontSize="large" />
+                  <p>Jonas Knappitsch</p>
+                </a>
               </div>
             </div>
           </div>
-        </Section>
-      </div>
-      <Section id="contact" textAlign="center" height="50" title="Contact me">
-        <p>
-          Let's approach your project together! I'd be glad to get in touch
-          with you.
-        </p>
-
-        <div className="grow py-4">
-          <Link href="#">
-            <a>
-              <Mail fontSize="large" />
-              <p>hello@wolkenstein.com</p>
-            </a>
-          </Link>
         </div>
       </Section>
       <style jsx>{`
-        .icon {
-          width: 60;
-        }
         .waves {
           background-image: url("/img/gradient-waves_2.png");
 
           background-repeat: no-repeat;
           background-size: 100% 100%;
+        }
+        li {
+          margin: 10px 0;
         }
       `}</style>
     </Layout>
